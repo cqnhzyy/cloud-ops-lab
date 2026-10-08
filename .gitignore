@@ -1,0 +1,32 @@
+# ---- 凭据一律不入库 ----
+*.tfvars
+*.tfvars.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+*credentials*
+kubeconfig
+*.kubeconfig
+
+# ---- Terraform 状态（含明文资源属性，可能含密钥）----
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 系统 ----
+Thumbs.db
+Desktop.ini
+.DS_Store
